@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Project 78</title>
+    </head>
+    <style>
+      img{
+        height: 500px;
+      }
+
+      body{
+        text-align: center;
+      }
+    </style>
+    <body>
+        <h1>My Family Book</h1>
+        <img id="images" src="https://media.istockphoto.com/vectors/illustration-of-a-cartoon-loving-family-vector-id155023746?k=6&m=155023746&s=170667a&w=0&h=WG8SgkDD4WkwXLrmC8jh1ITnyWKqhUhd74Xzt4iPjqg=">
+        <br>
+        <button type="move" onclick="next_slide()">Next</button>
+        <script>
+        var images=["https://i.ytimg.com/vi/awreq4g3ajQ/maxresdefault.jpg" , "https://png.pngtree.com/png-clipart/20190124/ourlarge/pngtree-a-family-of-five-family-portrait-reunion-cartoon-png-image_553155.jpg" , "https://i.pinimg.com/originals/61/b2/d3/61b2d33f39927afa72e5f57a28cc7c83.gif" , "https://cdn.dribbble.com/users/1201194/screenshots/5103464/comp_1.gif" , "https://cdn.dribbble.com/users/43762/screenshots/2006594/facebook---dribbble---family.gif" , "https://cdn.dribbble.com/users/953391/screenshots/4074023/probiotic.gif" , "https://www.gifmania.co.uk/Animated-Cartoons-Animated-Gifs/Animated-Nickelodeon/Peppa-Pig/Peppa-Pig-Family-83390.gif","https://media.istockphoto.com/vectors/illustration-of-a-cartoon-loving-family-vector-id155023746?k=6&m=155023746&s=170667a&w=0&h=WG8SgkDD4WkwXLrmC8jh1ITnyWKqhUhd74Xzt4iPjqg="];
+
+        var i=0;
+function next_slide(){
+  document.getElementById("images").src=images[i];
+  i++;
+  if(i==8){
+    i=0;
+  }
+}
+        </script>
+    </body>
+</html>
